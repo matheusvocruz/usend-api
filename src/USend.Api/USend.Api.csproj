@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation" Version="9.5.1" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="9.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\USend.Application\USend.Application.csproj" />
+    <ProjectReference Include="..\USend.Infra.Data\USend.Infra.Data.csproj" />
+    <ProjectReference Include="..\USend.Infrastructure.IoC\USend.Infrastructure.IoC.csproj" />
+  </ItemGroup>
+
+</Project>

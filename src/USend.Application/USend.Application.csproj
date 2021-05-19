@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="FluentValidation" Version="9.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\USend.Domain\USend.Domain.csproj" />
+    <ProjectReference Include="..\USend.Infra.Data\USend.Infra.Data.csproj" />
+  </ItemGroup>
+
+</Project>
